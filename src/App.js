@@ -1,4 +1,5 @@
 import Form from "./Form";
+import Tasks from "./Tasks";
 
 const tasks = [
   { id: 1, content: "przejść na reacta", done: false },
@@ -9,7 +10,10 @@ const hideDoneTasks = false;
 
 function App() {
   return (
-    <Form />
+    <>
+      <Form />
+      <Tasks tasks={tasks} hideDoneTasks={hideDoneTasks} />
+    </>
   );
 }
 
