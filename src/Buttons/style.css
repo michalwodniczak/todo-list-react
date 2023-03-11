@@ -1,0 +1,22 @@
+.section__hidden {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+.section__button {
+    border: none;
+    max-height: 30px;
+    background-color: #fff;
+    color: #008080;
+    transition: color 1s;
+    cursor: pointer;
+}
+
+.section__button:hover {
+    color: #00b3b3;
+}
+
+.section__button:disabled {
+    color: gray;
+}

@@ -1,5 +1,7 @@
 import Form from "./Form";
 import Tasks from "./Tasks";
+import Section from "./Section";
+import Buttons from "./Buttons";
 
 const tasks = [
   { id: 1, content: "przejść na reacta", done: false },
@@ -11,8 +13,15 @@ const hideDoneTasks = false;
 function App() {
   return (
     <>
-      <Form />
-      <Tasks tasks={tasks} hideDoneTasks={hideDoneTasks} />
+      <Section
+        title="Dodaj nowe zadanie"
+        body={<Form />}
+      />
+      <Section
+        title="Lista zadań"
+        body={<Tasks tasks={tasks} hideDoneTasks={hideDoneTasks} />}
+        extraBody={<Buttons tasks={tasks} hideDoneTasks={hideDoneTasks} />}
+      />
     </>
   );
 }
