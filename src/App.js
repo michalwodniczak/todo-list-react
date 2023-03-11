@@ -15,7 +15,9 @@ const hideDoneTasks = false;
 function App() {
   return (
     <Container>
-      <Header title="List zadań" />
+      <Header
+        title="List zadań"
+      />
       <main>
         <Section
           title="Dodaj nowe zadanie"
