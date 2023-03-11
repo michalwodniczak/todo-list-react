@@ -1,10 +1,17 @@
-.section__hidden {
+.button__container {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
+@media (max-width:768px) {
+    .button__container {
+        grid-template-columns: 1fr;
+        grid-gap:20px;
+        padding:10px;
+    }
+}
 
-.section__button {
+.button__button {
     border: none;
     max-height: 30px;
     background-color: #fff;
@@ -13,10 +20,10 @@
     cursor: pointer;
 }
 
-.section__button:hover {
+.button__button:hover {
     color: #00b3b3;
 }
 
-.section__button:disabled {
+.button__button:disabled {
     color: gray;
 }
