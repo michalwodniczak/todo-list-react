@@ -2,6 +2,7 @@ import Form from "./Form";
 import Tasks from "./Tasks";
 import Section from "./Section";
 import Buttons from "./Buttons";
+import Header from "./Header";
 
 const tasks = [
   { id: 1, content: "przejść na reacta", done: false },
@@ -13,6 +14,7 @@ const hideDoneTasks = false;
 function App() {
   return (
     <>
+      <Header title="List zadań" />
       <Section
         title="Dodaj nowe zadanie"
         body={<Form />}
