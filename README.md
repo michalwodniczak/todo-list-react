@@ -1,5 +1,5 @@
 # Task list
-This project was created for the you-code course.
+This project was created for the [Youcode Curse](https://youcode.pl).
 This is a task list made in React.
 
 
