@@ -1,17 +1,17 @@
-.button__container {
+.buttons__container {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
 @media (max-width:768px) {
-    .button__container {
+    .buttons__container {
         grid-template-columns: 1fr;
         grid-gap:20px;
         padding:10px;
     }
 }
 
-.button__button {
+.buttons__button {
     border: none;
     max-height: 30px;
     background-color: #fff;
@@ -20,10 +20,10 @@
     cursor: pointer;
 }
 
-.button__button:hover {
+.buttons__button:hover {
     color: #00b3b3;
 }
 
-.button__button:disabled {
+.buttons__button:disabled {
     color: gray;
 }
