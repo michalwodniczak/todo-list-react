@@ -41,7 +41,11 @@ function App() {
   };
 
   const addNewTask = (newTaskContent) => {
-    setTasks(tasks => [
+    if (newTaskContent.length === 0) {
+      return null
+    }
+
+    return setTasks(tasks => [
       ...tasks,
       {
         content: newTaskContent,
