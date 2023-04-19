@@ -30,6 +30,7 @@
     min-height: 40px;
     cursor: pointer;
     transition: background 1s;
+    font-size:13px;
 }
 
 .tasks__button:hover {
