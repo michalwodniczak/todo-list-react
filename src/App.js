@@ -20,7 +20,7 @@ function App() {
   const removeTasks = (id) => {
     setTasks(tasks => tasks.filter(task => task.id !== id));
   };
-  
+
   const toggleTaskDone = (id) => {
     setTasks((tasks) => tasks.map((task) => task.id === id
       ? { ...task, done: !task.done }
@@ -36,11 +36,7 @@ function App() {
   };
 
   const addNewTask = (newTaskContent) => {
-    if (newTaskContent.length === 0) {
-      return null
-    }
-
-    return setTasks(tasks => [
+    setTasks(tasks => [
       ...tasks,
       {
         content: newTaskContent,
