@@ -1,7 +1,8 @@
 import "./style.css";
+import { List } from "./styled.js";
 
 const Tasks = ({ tasks, hideDone, removeTasks, toggleTaskDone }) => (
-    <ul className="tasks__list">
+    <List>
         {tasks.map(task => (
             <li key={task.id}
                 className={`tasks__listItem ${task.done && hideDone ? "tasks__listItem--hide" : ""}`}
@@ -22,7 +23,7 @@ const Tasks = ({ tasks, hideDone, removeTasks, toggleTaskDone }) => (
                 </button>
             </li>
         ))}
-    </ul >
+    </List>
 )
 
 export default Tasks
