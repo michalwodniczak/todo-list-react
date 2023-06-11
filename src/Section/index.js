@@ -1,6 +1,6 @@
-import "./style.css"
+import "./style.css";
 
-const Section = ({ title, body, extraBody }) => (
+export const Section = ({ title, body, extraBody }) => (
     <section className="section">
         <div className="section__container">
             <h2 className="section__head">{title}</h2>
@@ -8,6 +8,4 @@ const Section = ({ title, body, extraBody }) => (
         </div>
         {body}
     </section>
-)
-
-export default Section;
+);

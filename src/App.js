@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import Form from "./Form";
 import Tasks from "./Tasks";
-import Section from "./Section";
+import { Section } from "./Section";
 import Buttons from "./Buttons";
 import { Header } from "./Header";
 import { Container } from "./Container";
