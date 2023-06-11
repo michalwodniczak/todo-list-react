@@ -1,13 +1,13 @@
 import { useState } from "react";
 import "./style.css";
-const Form = ({ addNewTask }) => {
+export const Form = ({ addNewTask }) => {
     const [newTaskContent, setNewTaskContent] = useState("")
-    
+
     const onFormSubmit = (event) => {
         event.preventDefault();
         if (newTaskContent.length === 0) {
             return null
-          };
+        };
         addNewTask(newTaskContent.trim());
         setNewTaskContent("");
     };
@@ -33,7 +33,3 @@ const Form = ({ addNewTask }) => {
         </form>
     )
 }
-
-
-
-export default Form

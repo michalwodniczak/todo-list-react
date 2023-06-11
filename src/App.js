@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import Form from "./Form";
+import { Form } from "./Form";
 import Tasks from "./Tasks";
 import { Section } from "./Section";
 import Buttons from "./Buttons";
