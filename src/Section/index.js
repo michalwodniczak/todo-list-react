@@ -1,4 +1,3 @@
-import "./style.css";
 import { Wrapper, Container, Head } from "./styled";
 
 export const Section = ({ title, body, extraBody }) => (
