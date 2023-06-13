@@ -54,11 +54,11 @@ function App() {
         title="List zadań"
       />
       <main>
-        <Section>
+        <Section
           title="Dodaj nowe zadanie"
           body={<Form addNewTask={addNewTask} />}
-        </Section>
-        <Section>
+        />
+        <Section
           title="Lista zadań"
           body={
             <Tasks
@@ -74,7 +74,7 @@ function App() {
               toggleHideDone={toggleHideDone}
               setAllDone={setAllDone}
             />}
-        </Section>
+        />
       </main>
     </Container>
   );
