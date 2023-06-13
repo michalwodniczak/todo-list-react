@@ -1,29 +1,30 @@
-.buttons__container {
+import styled from "styled-components";
+
+export const Wrapper = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr;
-}
 
 @media (max-width:768px) {
-    .buttons__container {
         grid-template-columns: 1fr;
         grid-gap:20px;
         padding:10px;
-    }
-}
+    };
+`;
 
-.buttons__button {
+export const Button = styled.button`
     border: none;
     max-height: 30px;
     background-color: #fff;
     color: #008080;
-    transition: color 1s;
+    transition: color 0.3s;
     cursor: pointer;
-}
 
-.buttons__button:hover {
-    color: #00b3b3;
-}
+    &:hover {
+        color: #00b3b3;
+    }
 
-.buttons__button:disabled {
-    color: gray;
-}
+    &:disabled {
+        color: gray;
+    }
+
+`
