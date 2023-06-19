@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react"
+import { useState, useEffect } from "react";
 
 const getInitialTask = () => {
     const localStorageTask = localStorage.getItem("tasks");
@@ -6,7 +6,7 @@ const getInitialTask = () => {
         return null;
     }
     return JSON.parse(localStorage.getItem("tasks"));
-}
+};
 
 export const useTasks = () => {
     const [tasks, setTasks] = useState(getInitialTask);
@@ -52,6 +52,4 @@ export const useTasks = () => {
         setAllDone,
         addNewTask,
     };
-
-
 };
