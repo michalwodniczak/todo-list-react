@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Wrapper = styled.section`
     margin: 3px auto;
-    background-color: #fff;
+    background-color: ${({ theme }) => theme.color.white};
 `
 export const Container = styled.div`
     display: grid;
@@ -10,9 +10,9 @@ export const Container = styled.div`
     grid-gap: 20px;
     padding: 5px;
     align-items: center;
-    border-bottom: 3px solid #eee;
+    border-bottom: 3px solid ${({ theme }) => theme.color.gallery};
 
-    @media (max-width:768px) {
+    @media (max-width:${({ theme }) => theme.breakPoint.mobile}px) {
         grid-template-columns: 1fr;
     };
 `;

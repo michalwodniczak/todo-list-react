@@ -12,7 +12,7 @@ export const Item = styled.li`
     word-break: break-word;
     padding: 10px;
     grid-gap: 10px;
-    border-bottom: 3px solid #eee;
+    border-bottom: 3px solid ${({ theme }) => theme.color.gallery};
 
     ${({ hidden }) => hidden && css`
         display: none;
@@ -24,7 +24,7 @@ export const Content = styled.span`
     `}
 `
 export const Button = styled.button`
-    background-color: #008000;
+    background-color: ${({ theme }) => theme.color.japaneseLaurel};
     color: white;
     padding: 10px;
     border: none;
@@ -34,14 +34,13 @@ export const Button = styled.button`
     font-size:13px;
 
     &:hover{
-        background-color: #00b300;
+        background-color: ${({ theme }) => theme.color.green};
     }
 
     ${({ remove }) => remove && css`
-        background-color: #ff0000;
-
+        background-color: ${({ theme }) => theme.color.red};
         &:hover{
-            background-color: #ff5452;
+            background-color: ${({ theme }) => theme.color.sunsetOrange};
         }
     `}
 `
