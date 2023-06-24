@@ -12,7 +12,7 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     body{
-         background-color: #eee;
+        background-color: #eee;
         padding:20px;
         font-family: 'Lato', sans-serif;
     }
