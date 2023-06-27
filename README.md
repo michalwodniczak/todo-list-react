@@ -6,8 +6,9 @@ This is a task list made in React.
 ## Features
 - HTML
 - CSS
-- Javascript with React
+- Javascript with React 
 - Convention BEM
+- use Hook: useState,useEffect,useRef and custom hook
 
 ## Demo
 https://widmo200.github.io/todo-list-react/
