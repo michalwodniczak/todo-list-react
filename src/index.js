@@ -1,15 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { GlobalStyle } from './globalStyle';
-import App from './App';
+import  App  from './App';
 import reportWebVitals from './reportWebVitals';
-import {theme} from "./App"
+import {theme} from "./features/tasks/Tasks"
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <GlobalStyle theme={theme} />
-    <App />
+    <App/>
   </React.StrictMode>
 );
 
