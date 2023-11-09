@@ -1,5 +1,4 @@
 import { ThemeProvider } from "styled-components";
-import { useSelector } from "react-redux";
 import { Form } from "./Form";
 import { TasksList } from "./TasksList";
 import { Section } from "../../common/Section";
@@ -7,7 +6,7 @@ import { Buttons } from "./Buttons";
 import { Header } from "../../common/Header";
 import { Container } from "../../common/Container";
 import { useTasks } from "../../useTasks";
-import { selectTasks } from "./tasksSlice";
+
 
 export const theme = {
   color: {
@@ -27,8 +26,8 @@ export const theme = {
 }
 
 function Tasks() {
-  const { tasks } = useSelector(selectTasks);
-  const { addNewTask, toggleTaskDone, removeTasks, setAllDone } = useTasks();
+  
+  const { removeTasks, setAllDone } = useTasks();
 
 
 
@@ -41,14 +40,13 @@ function Tasks() {
         <main>
           <Section
             title="Dodaj nowe zadanie"
-            body={<Form addNewTask={addNewTask} />}
+            body={<Form />}
           />
           <Section
             title="Lista zadań"
             body={
               <TasksList
                 removeTasks={removeTasks}
-                toggleTaskDone={toggleTaskDone}
               />}
             extraBody={
               <Buttons
