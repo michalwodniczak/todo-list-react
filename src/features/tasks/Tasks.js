@@ -46,7 +46,6 @@ function Tasks() {
             title="Lista zadań"
             body={
               <TasksList
-                removeTasks={removeTasks}
               />}
             extraBody={
               <Buttons
