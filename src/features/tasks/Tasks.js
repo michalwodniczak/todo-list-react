@@ -1,5 +1,5 @@
 import { ThemeProvider } from "styled-components";
-import { useState } from "react";
+import { useSelector } from "react-redux";
 import { Form } from "./Form";
 import { TasksList } from "./TasksList";
 import { Section } from "../../common/Section";
@@ -7,6 +7,7 @@ import { Buttons } from "./Buttons";
 import { Header } from "../../common/Header";
 import { Container } from "../../common/Container";
 import { useTasks } from "../../useTasks";
+import { selectTasks } from "./tasksSlice";
 
 export const theme = {
   color: {
@@ -26,12 +27,10 @@ export const theme = {
 }
 
 function Tasks() {
-  const [hideDone, setHideDone] = useState(false);
-  const { tasks, addNewTask, toggleTaskDone, removeTasks, setAllDone } = useTasks();
+  const { tasks } = useSelector(selectTasks);
+  const { addNewTask, toggleTaskDone, removeTasks, setAllDone } = useTasks();
 
-  const toggleHideDone = () => {
-    setHideDone(hideDone => !hideDone);
-  };
+
 
   return (
     <ThemeProvider theme={theme}>
@@ -48,16 +47,11 @@ function Tasks() {
             title="Lista zadań"
             body={
               <TasksList
-                tasks={tasks}
-                hideDone={hideDone}
                 removeTasks={removeTasks}
                 toggleTaskDone={toggleTaskDone}
               />}
             extraBody={
               <Buttons
-                tasks={tasks}
-                hideDone={hideDone}
-                toggleHideDone={toggleHideDone}
                 setAllDone={setAllDone}
               />}
           />
