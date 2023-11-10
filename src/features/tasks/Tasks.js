@@ -1,4 +1,3 @@
-import { ThemeProvider } from "styled-components";
 import { Form } from "./Form";
 import { TasksList } from "./TasksList";
 import { Section } from "../../common/Section";
@@ -25,8 +24,7 @@ export const theme = {
 
 function Tasks() {
   return (
-    <ThemeProvider theme={theme}>
-      <Container>
+    <Container>
         <Header
           title="List zadań"
         />
@@ -42,7 +40,6 @@ function Tasks() {
           />
         </main>
       </Container>
-    </ThemeProvider>
   );
 }
 
