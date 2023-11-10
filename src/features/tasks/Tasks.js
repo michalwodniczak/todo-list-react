@@ -5,8 +5,6 @@ import { Section } from "../../common/Section";
 import { Buttons } from "./Buttons";
 import { Header } from "../../common/Header";
 import { Container } from "../../common/Container";
-import { useTasks } from "../../useTasks";
-
 
 export const theme = {
   color: {
@@ -26,11 +24,6 @@ export const theme = {
 }
 
 function Tasks() {
-  
-  const { removeTasks, setAllDone } = useTasks();
-
-
-
   return (
     <ThemeProvider theme={theme}>
       <Container>
@@ -44,13 +37,8 @@ function Tasks() {
           />
           <Section
             title="Lista zadań"
-            body={
-              <TasksList
-              />}
-            extraBody={
-              <Buttons
-                setAllDone={setAllDone}
-              />}
+            body={<TasksList />}
+            extraBody={<Buttons />}
           />
         </main>
       </Container>
