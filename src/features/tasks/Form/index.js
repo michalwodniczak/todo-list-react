@@ -11,16 +11,17 @@ export const Form = () => {
 
     const onFormSubmit = (event) => {
         event.preventDefault();
-        if (newTaskContent.length === 0) {
-            return null
-        };
+
+        if (newTaskContent.trim() === "") {
+            return null;
+        }
 
         dispatch(addTask({
             content: newTaskContent.trim(),
             done: false,
             id: nanoid(),
         }));
-        
+
         setNewTaskContent("");
     };
 
