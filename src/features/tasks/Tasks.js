@@ -26,7 +26,7 @@ function Tasks() {
   return (
     <Container>
         <Header
-          title="List zadań"
+          title="Lista zadań"
         />
         <main>
           <Section
