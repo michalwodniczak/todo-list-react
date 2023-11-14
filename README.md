@@ -13,7 +13,7 @@ This is a task list made in React.
 
 ## Demo
 https://widmo200.github.io/todo-list-react/
-![preview](./public/img/preview.png)
+![preview](./public/img/preview.gif)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
