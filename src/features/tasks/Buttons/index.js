@@ -10,8 +10,6 @@ export const Buttons = () => {
     const everyTaskDone = useSelector(selectIsEveryTaskDone);
     const dispatch = useDispatch();
 
-
-
     return (
         <Wrapper>
             <Button onClick={() => dispatch(fetchExampleTasks())}>
