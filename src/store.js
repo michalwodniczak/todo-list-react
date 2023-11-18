@@ -1,7 +1,7 @@
 import { configureStore } from "@reduxjs/toolkit";
 import createSagaMiddleware from "redux-saga";
 import tasksReducer from "./features/tasks/tasksSlice";
-import { watchFetchExampleTasks } from "./features/tasks/taskSaga";
+import { taskSaga } from "./features/tasks/taskSaga";
 
 const sagaMiddleware = createSagaMiddleware();
 
@@ -13,6 +13,6 @@ const store = configureStore({
     middleware: [sagaMiddleware],
 });
 
-sagaMiddleware.run(watchFetchExampleTasks);
+sagaMiddleware.run(taskSaga);
 
 export default store;
