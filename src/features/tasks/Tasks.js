@@ -4,6 +4,7 @@ import { Section } from "../../common/Section";
 import { Buttons } from "./Buttons";
 import { Header } from "../../common/Header";
 import { Container } from "../../common/Container";
+import { Button } from "./Button";
 
 export const theme = {
   color: {
@@ -25,21 +26,22 @@ export const theme = {
 function Tasks() {
   return (
     <Container>
-        <Header
-          title="Lista zadań"
+      <Header
+        title="Lista zadań"
+      />
+      <main>
+        <Section
+          title="Dodaj nowe zadanie"
+          body={<Form />}
+          extraBody={<Button />}
         />
-        <main>
-          <Section
-            title="Dodaj nowe zadanie"
-            body={<Form />}
-          />
-          <Section
-            title="Lista zadań"
-            body={<TasksList />}
-            extraBody={<Buttons />}
-          />
-        </main>
-      </Container>
+        <Section
+          title="Lista zadań"
+          body={<TasksList />}
+          extraBody={<Buttons />}
+        />
+      </main>
+    </Container>
   );
 }
 
