@@ -8,7 +8,7 @@ export const Button = () => {
 
     return (
         <StyledButton onClick={() => dispatch(fetchExampleTasks())} disabled={areLoading ? true : false}>
-            Pobierz przykładowe zadania
+            {areLoading === true ? "Ładowanie..." : "Pobierz przykładowe zadania"}
         </StyledButton>
     )
 }
