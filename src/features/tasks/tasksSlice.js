@@ -46,4 +46,6 @@ export const selectHideDone = state => selectTaskState(state).hideDone;
 export const selectAreTasksEmpty = state => selectTasks(state).length === 0;
 export const selectIsEveryTaskDone = state => selectTasks(state).every(({ done }) => done);
 export const selectLoading = state => selectTaskState(state).loading;
+export const getTaskById = (state,taskId) => selectTasks(state).find(({id}) => id === taskId);
+
 export default taskSlice.reducer;
