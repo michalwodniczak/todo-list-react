@@ -5,7 +5,7 @@ import { ThemeProvider } from "styled-components";
 import { GlobalStyle } from './globalStyle';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { theme } from "./features/tasks/Tasks";
+import { theme } from './features/tasks/TasksPage/TasksPage.js';
 import store from "./store.js";
 
 

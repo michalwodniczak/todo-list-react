@@ -1,10 +1,10 @@
-import { Form } from "./Form";
-import { TasksList } from "./TasksList";
-import { Section } from "../../common/Section";
+import { Form} from "./Form";
+import { TasksList } from "../TasksList";
+import { Section } from "../../../common/Section";
 import { Buttons } from "./Buttons";
-import { Header} from "../../common/Header";
-import { Container } from "../../common/Container";
-import { Button } from "./Button";
+import { Header} from "../../../common/Header";
+import { Container } from "../../../common/Container";
+import { Button } from "./Button"
 
 export const theme = {
   color: {
@@ -23,7 +23,7 @@ export const theme = {
   }
 }
 
-function Tasks() {
+function TasksPage() {
   return (
     <Container>
       <Header
@@ -42,7 +42,7 @@ function Tasks() {
         />
       </main>
     </Container>
-  );
+  )
 }
 
-export default Tasks;
+export default TasksPage;

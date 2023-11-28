@@ -1,6 +1,6 @@
 import React from "react";
 import { HashRouter, Switch, Route, Redirect } from "react-router-dom/";
-import Tasks from "./features/tasks/Tasks";
+import TasksPage from "./features/tasks/TasksPage/TasksPage";
 import Author from "./features/author/Author";
 import { Navigation } from "./common/Navigation";
 
@@ -9,7 +9,7 @@ export default () => (
         <Navigation />
         <Switch>
             <Route path="/zadania">
-                <Tasks />
+                <TasksPage />
             </Route>
             <Route path="/autor" >
                 <Author />
