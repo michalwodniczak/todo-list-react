@@ -5,6 +5,7 @@ import { Buttons } from "./Buttons";
 import { Header} from "../../../common/Header";
 import { Container } from "../../../common/Container";
 import { Button } from "./Button"
+import { Search } from "../Search";
 
 export const theme = {
   color: {
@@ -35,6 +36,12 @@ function TasksPage() {
           body={<Form />}
           extraBody={<Button />}
         />
+        <Section
+          title="Wyszukiwarka"
+          body={<Search/>}
+        >
+
+        </Section>
         <Section
           title="Lista zadań"
           body={<TasksList />}
