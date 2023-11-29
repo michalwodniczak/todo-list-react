@@ -13,11 +13,6 @@ export const FormBody = styled.form`
     };
 `;
 
-export const Input = styled.input`
-    padding: 10px;
-    border: 1px solid #eee;
-`;
-
 export const Button = styled.button`
     background-color: #008080;
     color: #fff;
