@@ -14,7 +14,7 @@ export const FormBody = styled.form`
 `;
 
 export const Button = styled.button`
-    background-color: #008080;
+    background-color: ${({ theme }) => theme.color.teal};
     color: #fff;
     border: none;
     font-size: 16px;
@@ -26,15 +26,15 @@ export const Button = styled.button`
     };
 
     &:focus{
-        background-color: #00b3b3;
+        background-color: ${({ theme }) => theme.color.bondieBlue};
     };
 
     &:hover{
-        background-color: #00b3b3;
+        background-color: ${({ theme }) => theme.color.bondieBlue};
         transform: scale(1.1);
     };
 
     &:active{
-        background-color: #009999;
+        background-color: ${({ theme }) => theme.color.persianGreen};
     };
 `;
