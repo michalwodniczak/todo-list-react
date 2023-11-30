@@ -18,6 +18,7 @@ export const theme = {
     green: "#00b300",
     red: "#ff0000",
     sunsetOrange: "#ff5452",
+    persianGreen: "#009999"
   },
   breakPoint: {
     mobile: 768,
