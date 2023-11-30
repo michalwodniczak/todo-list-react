@@ -6,7 +6,7 @@ export const FormBody = styled.form`
     grid-template-columns: 1fr 130px;
     grid-gap: 30px;
 
-    @media (max-width:768px)
+    @media (max-width:${({theme}) => theme.breakPoint.mobile}px)
     {
         grid-template-columns: 1fr;
         grid-gap: 10px;
