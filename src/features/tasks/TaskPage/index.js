@@ -8,7 +8,8 @@ import { getTaskById } from "../tasksSlice";
 
 function TaskPage() {
     const { id } = useParams();
-    const tasks = useSelector(state => getTaskById(state, id));
+    const task = useSelector(state => getTaskById(state, id));
+
     return (
         <Container>
             <Header
@@ -16,12 +17,13 @@ function TaskPage() {
             />
             <main>
                 <Section
-                    title={tasks ? tasks.content : "nie znaleziono zadania"}
+                    title={task ? task.content : "Nie znaleziono zadania :("}
                     body={
-                        <>
-                            <strong>Ukonczono</strong> {tasks.done ? "Tak" : "Nie"}
-                        </>
-                    }
+                        !!task && (
+                            <>
+                                <strong>Ukonczono</strong> {task.done ? "Tak" : "Nie"}
+                            </>
+                        )}
                 />
             </main>
         </Container>
