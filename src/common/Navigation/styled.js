@@ -11,6 +11,13 @@ export const NaviList = styled.ul`
     padding:20px;
     font-size:20px;
     justify-content: center;
+
+    @media (max-width:${({ theme }) => theme.breakPoint.mobile}px){
+        flex-direction: column;
+        align-items:center;
+        gap:10px;
+    }
+    
 `
 export const StyledNavLink = styled(NavLink).attrs(() => ({
     activeClassName
