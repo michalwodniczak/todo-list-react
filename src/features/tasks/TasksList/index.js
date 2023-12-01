@@ -1,11 +1,14 @@
 import { useSelector, useDispatch } from "react-redux";
-import { Link } from "react-router-dom";
-import { selectTasks, toggleTaskDone, removeTask, selectHideDone } from "../tasksSlice.js";
-import { List, Item, Content, Button } from "./styled.js";
-
+import { selectTaskByQuery, toggleTaskDone, removeTask, selectHideDone } from "../tasksSlice.js";
+import { List, Item, Content, Button, StyledLink } from "./styled.js";
+import { useQueryParamteres } from "../queryParameters.js";
+import searchQueryParamName  from "../../searchQueryParamName.js";
 
 export const TasksList = () => {
-    const tasks = useSelector(selectTasks);
+
+    const query = useQueryParamteres(searchQueryParamName);
+
+    const tasks = useSelector(state => selectTaskByQuery(state, query));
     const hideDone = useSelector(selectHideDone);
     const dispatch = useDispatch();
 
@@ -24,7 +27,7 @@ export const TasksList = () => {
                     <Content
                         done={task.done}
                     >
-                        <Link to={`/zadania/${task.id}`}>{task.content}</Link>
+                        <StyledLink to={`/zadania/${task.id}`}>{task.content}</StyledLink>
                     </Content>
                     <Button
                         remove

@@ -1,4 +1,5 @@
 import styled, { css } from "styled-components";
+import { Link } from "react-router-dom";
 
 export const List = styled.ul`
     margin: 0;
@@ -43,4 +44,12 @@ export const Button = styled.button`
             background-color: ${({ theme }) => theme.color.sunsetOrange};
         }
     `}
+`
+export const StyledLink = styled(Link)`
+    color:${({ theme }) => theme.color.teal};
+    text-decoration: none;
+    transition: color 1s;
+    &:hover {
+        color: ${({ theme }) => theme.color.bondiBlue};
+    }
 `
