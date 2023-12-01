@@ -8,8 +8,12 @@ This is a task list made in React.
 - CSS
 - Javascript with React 
 - Convention BEM
-- use Hook: useState,useEffect,useRef
-- use React-Redux
+- Hook: useState,useRef and custom hooks
+- Styled Components
+- React-Redux
+- Redux-Saga
+- React-Router 
+
 
 ## Demo
 https://widmo200.github.io/todo-list-react/
