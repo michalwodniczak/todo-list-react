@@ -4,6 +4,20 @@ This is a task list made in React.
 
 
 ## Features
+This page focuses on a task list application, featuring a central interface with four key element:
+- a button to download exampel tasks.
+- a form with a field for entering task.
+- a search tool for tasks.
+- a dynamically generated task list from the form , offering two options:
+  - marking a task as completed , which crosses out its text
+  - removin a task from the list.
+
+To view task details, simply click on the respective task text in the list.
+Beyond the task list, the application also includes an author page, providing insights into the creator.
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Technologies
 - HTML
 - CSS
 - Javascript with React 
@@ -17,9 +31,8 @@ This is a task list made in React.
 
 ## Demo
 https://widmo200.github.io/todo-list-react/
-![preview](./public/img/preview.gif)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![preview](./public/img/preview.gif)
 
 ## Available Scripts
 
