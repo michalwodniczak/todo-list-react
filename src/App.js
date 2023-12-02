@@ -4,22 +4,23 @@ import TasksPage from "./features/tasks/TasksPage/TasksPage";
 import TaskPage from "./features/tasks/TaskPage";
 import AuthorPage from "./features/author/AuthorPage";
 import { Navigation } from "./common/Navigation";
+import { toTasks, toAuthor, toTask } from "./route";
 
 export default () => (
     <HashRouter>
         <Navigation />
         <Switch>
-            <Route path="/zadania/:id">
-                <TaskPage/>
+            <Route path={toTask()}>
+                <TaskPage />
             </Route>
-            <Route path="/zadania">
+            <Route path={toTasks()}>
                 <TasksPage />
             </Route>
-            <Route path="/autor" >
+            <Route path={toAuthor()} >
                 <AuthorPage />
             </Route>
             <Route path="/">
-                <Redirect to="/zadania" />
+                <Redirect to={toTasks()} />
             </Route>
         </Switch>
     </HashRouter>

@@ -3,6 +3,7 @@ import { selectTaskByQuery, toggleTaskDone, removeTask, selectHideDone } from ".
 import { List, Item, Content, Button, StyledLink } from "./styled.js";
 import { useQueryParamteres } from "../queryParameters.js";
 import searchQueryParamName from "../../searchQueryParamName.js";
+import { toTask } from "../../../route.js";
 
 export const TasksList = () => {
     const query = useQueryParamteres(searchQueryParamName);
@@ -25,7 +26,7 @@ export const TasksList = () => {
                     <Content
                         done={task.done}
                     >
-                        <StyledLink to={`/zadania/${task.id}`}>{task.content}</StyledLink>
+                        <StyledLink to={toTask({id: task.id})}>{task.content}</StyledLink>
                     </Content>
                     <Button
                         remove
