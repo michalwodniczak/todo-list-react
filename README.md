@@ -26,6 +26,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - Styled Components
 - React-Redux
 - Redux-Saga
+- Redux-toolkit
 - React-Router 
 
 
