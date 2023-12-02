@@ -4,17 +4,15 @@ import { Section } from "../../common/Section";
 import { Author } from "./Author";
 
 export default function AuthorPage() {
-    return (
-        <Container>
-            <Header
-                title="o Autorze"
+    <Container>
+        <Header
+            title="o Autorze"
+        />
+        <main>
+            <Section
+                title="Michał Wodniczak"
+                body={<Author />}
             />
-            <main>
-                <Section
-                    title="Michał Wodniczak"
-                    body={<Author/>}
-                />
-            </main>
-        </Container>
-    );
+        </main>
+    </Container>
 }
