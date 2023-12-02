@@ -4,7 +4,7 @@ import { Section } from "../../common/Section";
 import { Author } from "./Author";
 
 export default function AuthorPage() {
-    <Container>
+    return(<Container>
         <Header
             title="o Autorze"
         />
@@ -14,5 +14,5 @@ export default function AuthorPage() {
                 body={<Author />}
             />
         </main>
-    </Container>
+    </Container>)
 }
