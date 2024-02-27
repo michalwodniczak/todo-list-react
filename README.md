@@ -31,7 +31,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 
 ## Demo
-https://widmo200.github.io/todo-list-react/
+https://michalwodniczak.github.io/todo-list-react/
 
 ![preview](./public/img/preview.gif)
 
@@ -68,4 +68,4 @@ Instead, it will copy all the configuration files and the transitive dependencie
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
 ## Contact
-[Author](https://github.com/widmo200/)
+[Author](https://github.com/michalwodniczak/)
